@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Play Retro Games Online</title>
+<link rel="shortcut icon" href="https://retrogames.onl/favicon.ico" type="image/x-icon" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" lang="en" content="PlayStation PS1/PSX, 3DO, SEGA, Nintendo, Arcade, Atari, Neo-Geo, TG-16, PC (Win3x, MS-DOS), Amstrad, MSX." />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link rel="stylesheet" type="text/css" href="https://www.retrogames.onl/cc/cc-games.css">
+<style>
+#game {
+background-image: url(https://cloudwebgpt.com/content/image/fighting-force-ps1.png);
+}
+</style>
+</head>
+<body>
+<div id="game""></div>
+<script type="text/javascript">
+    EJS_player = '#game';
+    EJS_biosUrl = 'https://cloudwebgpt.com/data/games/psxbios.7z'; // Url to Bios file
+    EJS_gameUrl = 'https://cloudwebgpt.com/ps1.7z'; // Url to Game rom
+    EJS_core = 'psx';
+    EJS_pathtodata = 'data/';
+</script>
+<script src="data/loader.js"></script>
+<script type="text/javascript">
+document.addEventListener('mouseup', function(e) {
+  let container = document.getElementById('game');
+  if (!container.contains(e.target)) {
+        container.style.backgroundImage = 'none';
+  }
+});
+</script>
+<span style="font-family: &quot;verdana&quot; , sans-serif; font-size: 14px;"><span style="color: #ad3a2b;"><font size="2">Fighting Force</font></span></span>
+</body>
+</html>
